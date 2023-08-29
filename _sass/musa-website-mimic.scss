@@ -117,6 +117,25 @@ h2::after {
   width: 1px;
 }
 
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: black;
+  }
+}
+
 /* Header mobile menu toggle */
 
 .logo {
@@ -239,6 +258,24 @@ h2::after {
   transition-delay: 0.2s;
 }
 
+/* Home page intro/mission */
+
+.resume-button-wrapper {
+  margin-top: calc(var(--spacing) * 2);
+  text-align: center;
+}
+
+/* About page */
+
+.headshot {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
 /* Project list on the home page */
 
 .project-link {
@@ -308,7 +345,7 @@ h2::after {
 
 /* Project page */
 
-.featured-image {
+post-container img {
   width: 100%;
 }
 
@@ -357,6 +394,12 @@ h2::after {
 
   .projects-container {
     justify-content: flex-start;
+  }
+
+  .headshot {
+    float: left;
+    margin-right: var(--spacing);
+    margin-bottom: var(--spacing);
   }
 }
 
